@@ -1,3 +1,5 @@
+***warning lot of this is AI generaged. Use after your own review****
+
 # OPNsense WhoisDS NRD
 
 A lightweight OPNsense integration that collects WhoisDS Newly Registered Domains (NRD) daily archives, maintains a configurable rolling feed, and exposes it to Unbound DNSBL through a loopback-only HTTP endpoint.
