@@ -1,0 +1,6 @@
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<menu>
+    <Services order="70">
+        <WhoisdsNrd VisibleName="WhoisDS NRD" cssClass="fa fa-shield fa-fw" url="/ui/whoisdsnrd/" />
+    </Services>
+</menu>

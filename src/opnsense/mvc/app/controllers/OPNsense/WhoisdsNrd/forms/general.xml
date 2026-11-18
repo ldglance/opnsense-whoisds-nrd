@@ -1,0 +1,17 @@
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<form>
+    <field>
+        <id>whoisdsnrd.general.retentionDays</id>
+        <label>Aggregate retention (days)</label>
+        <type>text</type>
+        <help>Number of daily WhoisDS archives to retain and include in the published aggregate. Range: 1–15 days. Default: 3.</help>
+        <hint>3</hint>
+    </field>
+    <field>
+        <id>whoisdsnrd.general.excludedTlds</id>
+        <label>Exclude TLDs / suffixes</label>
+        <type>text</type>
+        <help>Comma-separated suffixes to omit from the aggregate. Example: ru,cn,xyz. You may also enter multi-label suffixes such as co.uk. Daily source archives remain unmodified.</help>
+        <hint>ru,cn,xyz</hint>
+    </field>
+</form>

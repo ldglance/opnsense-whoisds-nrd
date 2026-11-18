@@ -1,0 +1,20 @@
+#!/bin/sh
+# SPDX-License-Identifier: GPL-3.0-or-later
+# PROVIDE: whoisds_nrd
+# REQUIRE: NETWORKING
+# KEYWORD: shutdown
+
+. /etc/rc.subr
+name="whoisds_nrd"
+rcvar="whoisds_nrd_enable"
+load_rc_config "$name"
+: ${whoisds_nrd_enable:="YES"}
+: ${whoisds_nrd_script:="/usr/local/opnsense/scripts/whoisds_nrd/updater.py"}
+: ${whoisds_nrd_pidfile:="/var/run/whoisds_nrd.pid"}
+pidfile="$whoisds_nrd_pidfile"
+command="/usr/sbin/daemon"
+# daemon -p records the child Python PID, so rc.subr must match the child,
+# not the supervising /usr/sbin/daemon process.
+procname="/usr/local/bin/python3.13"
+command_args="-p ${pidfile} -f /usr/local/bin/python3.13 ${whoisds_nrd_script} --serve"
+run_rc_command "$1"

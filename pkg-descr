@@ -1,0 +1,4 @@
+OPNsense GUI manager and rolling WhoisDS Newly Registered Domains feed for
+Unbound DNSBL. Supports configurable 1-15 day retention, TLD/suffix filtering,
+local-only HTTP serving, cached archive validation, lightweight status, and
+targeted Unbound cache refresh with ingestion verification.

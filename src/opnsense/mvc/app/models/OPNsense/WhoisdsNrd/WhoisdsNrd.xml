@@ -1,0 +1,21 @@
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<model>
+    <mount>//OPNsense/whoisdsnrd</mount>
+    <description>WhoisDS Newly Registered Domains settings</description>
+    <items>
+        <general>
+            <retentionDays type="IntegerField">
+                <Default>3</Default>
+                <MinimumValue>1</MinimumValue>
+                <MaximumValue>15</MaximumValue>
+                <Required>Y</Required>
+                <ValidationMessage>Retention must be between 1 and 15 days.</ValidationMessage>
+            </retentionDays>
+            <excludedTlds type="TextField">
+                <Default></Default>
+                <Mask>/^[A-Za-z0-9.,* -]*$/u</Mask>
+                <ValidationMessage>Use comma-separated TLD suffixes, such as ru,cn,xyz.</ValidationMessage>
+            </excludedTlds>
+        </general>
+    </items>
+</model>

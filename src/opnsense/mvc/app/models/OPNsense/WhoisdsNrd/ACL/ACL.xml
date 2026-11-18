@@ -1,0 +1,11 @@
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<acl>
+    <page-services-whoisds-nrd>
+        <name>Services: WhoisDS NRD Manager</name>
+        <description>Manage the WhoisDS Newly Registered Domains feed and Unbound integration.</description>
+        <patterns>
+            <pattern>ui/whoisdsnrd/*</pattern>
+            <pattern>api/whoisdsnrd/*</pattern>
+        </patterns>
+    </page-services-whoisds-nrd>
+</acl>
